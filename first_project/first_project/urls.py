@@ -19,5 +19,6 @@ from basic_app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index),
+    url(r'^$', views.IndexView.as_view()),
+    # grabs our class and show it as a view
 ]
