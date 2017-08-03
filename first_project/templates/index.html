@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
-{% block blody_block %}
-  <h1>Template view served up by a class in our views.py file</h1>
+{% block body_block %}
+  <div class="jumbotron">
+    <h1>Template view served up by a class in our views.py file</h1>
+    <h2>how to do template injection with class based views:  {{injection}}</h2>
+    <h3>also serving as the home page</h3>
+  </div>
 {% endblock %}
